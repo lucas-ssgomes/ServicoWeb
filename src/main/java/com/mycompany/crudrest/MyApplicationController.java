@@ -22,7 +22,7 @@ class MyApplicationController {
         this.personagemDAO = new PersonagemDAO();
     } 
     
-    //http://localhost:8080/crudrest/meuwebservice/ola
+    //http://localhost:8084/crudrest/meuwebservice/ola
     @GET
     @Path("ola")
     @Produces(MediaType.TEXT_PLAIN)
@@ -30,7 +30,7 @@ class MyApplicationController {
         return "Ola mundooo!";
     }
     
-    //http://localhost:8080/ServicoWeb/meuwebservice/adicionar?nome=Shoob&classe=anao&vida=506&arma=machado
+    //http://localhost:8084/crudrest/meuwebservice/adicionar?nome=Shoob&classe=anao&vida=506&arma=machado
     @POST
     @Path("adicionar")
     public Response adicionar(@QueryParam("nome") String nome,
@@ -42,7 +42,7 @@ class MyApplicationController {
         return Response.status(Response.Status.OK).build();
     }
     
-    //http://localhost:8080/WebService/meuwebservice/recuperar
+    //http://localhost:8084/crudest/meuwebservice/recuperar
     @GET
     @Path("recuperar")
     @Produces(MediaType.APPLICATION_JSON)
@@ -52,7 +52,7 @@ class MyApplicationController {
         return Response.status(Response.Status.OK).entity(gson.toJson(personagem)).build();
     }
     
-    //http://localhost:8080/WebService/meuwebservice/alterar?nomeAntigo=Shoob&nome=Schood&classe=anao&vida=508&arma=machado
+    //http://localhost:8084/crudest/meuwebservice/alterar?nomeAntigo=Shoob&nome=Schood&classe=anao&vida=508&arma=machado
     @POST
     @Path("alterar")
     public Response alterar(@QueryParam("nomeAntigo") String nomeAntigo,
@@ -65,7 +65,7 @@ class MyApplicationController {
         return Response.status(Response.Status.OK).build();
     }
     
-    //http://localhost:8080/WebService/meuwebservice/deletar?nome=Schood&classe=anao&vida=508&arma=machado
+    //http://localhost:8084/crudest/meuwebservice/deletar?nome=Schood&classe=anao&vida=508&arma=machado
     @DELETE
     @Path("deletar")
     public Response deletar(@QueryParam("nome") String nome){
@@ -73,7 +73,7 @@ class MyApplicationController {
         return Response.status(Response.Status.OK).build();
     }
     
-    //http://localhost:8080/WebService/meuwebservice/recuperar
+    //http://localhost:8084/crudest/meuwebservice/recuperar
     @GET
     @Path("recuperarTodos")
     @Produces(MediaType.APPLICATION_JSON)
