@@ -22,6 +22,10 @@ public class Personagem {
         this.vida = vida;
         this.arma = arma;
     }
+
+    Personagem(String nome) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public String getNome() {
         return nome;

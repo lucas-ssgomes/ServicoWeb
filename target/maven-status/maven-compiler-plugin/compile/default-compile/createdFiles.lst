@@ -1,2 +1,4 @@
-com\mycompany\crudrest\Personagem.class
 com\mycompany\crudrest\PersonagemDAO.class
+com\mycompany\crudrest\MyApplication.class
+com\mycompany\crudrest\MyApplicationController.class
+com\mycompany\crudrest\Personagem.class
